@@ -29,7 +29,7 @@ export default function Footer() {
             </a>
           </div>
           <div className="flex items-center gap-2 mb-1">
-            <span className="material-icons text-green-500">location_on</span>
+            <span className="material-icons text-green-500"></span>
             <span>Dirección: Calle 6 # 11-52 centro</span>
           </div>
         </div>

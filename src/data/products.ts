@@ -104,7 +104,7 @@ const products: Product[] = [
     name: 'Whisky Grants',
     description: 'Whisky madurado en barriles de cerveza; sabor afrutado y amielado.',
     price: 2000,
-    imageUrl: '/images/whisky-grants.jpg',
+    imageUrl: '/images/whisky-grants.png',
     category: 'Adiciones',
   },
   {
@@ -112,7 +112,7 @@ const products: Product[] = [
     name: 'Amaretto',
     description: 'Licor Amaretto, notas de almendra que realzan tu bebida.',
     price: 2000,
-    imageUrl: '/images/amaretto.jpg',
+    imageUrl: '/images/amaretto.png',
     category: 'Adiciones',
   },
   {
@@ -120,7 +120,7 @@ const products: Product[] = [
     name: 'Licor de Café',
     description: 'Licor oscuro y aromático que intensifica el sabor a café.',
     price: 2000,
-    imageUrl: '/images/licor-cafe.jpg',
+    imageUrl: '/images/licor-cafe.png',
     category: 'Adiciones',
   },
 ]
