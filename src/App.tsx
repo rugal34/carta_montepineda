@@ -2,11 +2,22 @@
 import { useCart } from './hooks/useCart'
 import products from './data/products'
 import { ProductCard } from './components/ProductCard'
-import { CartPanel } from './components/CartPanel'
 import Footer from './components/Footer'
+import CartBar from './components/CartBar'
+import CartModal from './components/CartModal'
+import { useState } from 'react'
 
 export default function App() {
   const { items, add, remove, total } = useCart()
+  const [cartOpen, setCartOpen] = useState(false)
+
+  // Adaptar los items para CartModal
+  const cartItems = items.map(item => ({
+    id: item.id,
+    name: item.name,
+    price: item.price,
+    quantity: item.quantity,
+  }))
 
   return (
     <div className="min-h-screen bg-gray-50 pb-32">
@@ -30,7 +41,22 @@ export default function App() {
         })}
       </main>
 
-      {items.length > 0 && <CartPanel items={items} total={total} />}
+      {/* Barra inferior del carrito */}
+      {items.length > 0 && (
+        <CartBar
+          total={total}
+          count={items.reduce((acc, item) => acc + item.quantity, 0)}
+          onClick={() => setCartOpen(true)}
+        />
+      )}
+      {/* Modal del carrito */}
+      <CartModal
+        open={cartOpen}
+        items={cartItems}
+        total={total}
+        onClose={() => setCartOpen(false)}
+        onConfirm={() => setCartOpen(false)}
+      />
       <Footer />
     </div>
   )
