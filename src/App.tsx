@@ -22,8 +22,13 @@ export default function App() {
   return (
     <div className="min-h-screen bg-gray-50 pb-32">
       <header className="text-center py-6 bg-white shadow">
+        <img
+          src="/public/assets/montepineda-logo.png.JPG"
+          alt="MontePineda Café Logo"
+          className="mx-auto w-32 mb-4"
+        />
         <h1 className="text-2xl font-bold text-brown-700">MontePineda Café</h1>
-        <p className="text-brown-500">Experiencia Artesanal desde 1985</p>
+        <p className="text-brown-500">Fresco como la montaña, café origen pradera</p>
       </header>
 
       <main className="p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
