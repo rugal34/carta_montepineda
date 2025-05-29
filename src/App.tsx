@@ -3,6 +3,7 @@ import { useCart } from './hooks/useCart'
 import products from './data/products'
 import { ProductCard } from './components/ProductCard'
 import { CartPanel } from './components/CartPanel'
+import Footer from './components/Footer'
 
 export default function App() {
   const { items, add, remove, total } = useCart()
@@ -30,6 +31,7 @@ export default function App() {
       </main>
 
       {items.length > 0 && <CartPanel items={items} total={total} />}
+      <Footer />
     </div>
   )
 }
