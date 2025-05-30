@@ -25,7 +25,7 @@ export default function App() {
         <img
           src="/assets/montepineda-logo.JPG"
           alt="MontePineda Café Logo"
-          className="mx-auto w-32 mb-4"
+          className="mx-auto w-20 mb-4"
         />
         <h1 className="text-2xl font-bold text-brown-700">MontePineda Café</h1>
         <p className="text-brown-500">Fresco como la montaña, café origen pradera</p>
