@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="bg-brown-500 text-yellow-100 py-10 px-6 relative">
       <img
-        src="/public/assets/coffee-bean.PNG"
+        src="/assets/coffee-bean.PNG"
         alt="Icono grano de café"
         className="absolute top-4 left-4 w-8 h-8 opacity-50 mb-4"
       />

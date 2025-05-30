@@ -23,7 +23,7 @@ export default function App() {
     <div className="min-h-screen bg-gray-50 pb-32">
       <header className="text-center py-6 bg-white shadow">
         <img
-          src="/public/assets/montepineda-logo.JPG"
+          src="/assets/montepineda-logo.JPG"
           alt="MontePineda Café Logo"
           className="mx-auto w-32 mb-4"
         />
